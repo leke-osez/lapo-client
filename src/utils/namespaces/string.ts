@@ -11,6 +11,6 @@ export function formatToNaira(amount: number) {
   }
 }
 
-function abbreviateCurrency(amount: number) {
-  const factor = amount % 1000;
-}
+// function abbreviateCurrency(amount: number) {
+//   const factor = amount % 1000;
+// }

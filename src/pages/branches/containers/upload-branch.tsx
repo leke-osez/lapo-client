@@ -6,7 +6,6 @@ import { Button } from "../../../ui/components/button";
 import CustomFileUploader from "../../../ui/components/file-uploader";
 import { Modal } from "../../../ui/components/modal";
 import CsvFileIcon from "../../../assets/comps/csv-file-icon";
-import HandDragIcon from "../../../assets/comps/hand-drag-icon";
 import UploadCloudIcon from "../../../assets/comps/upload-cloud-icon";
 import FileCsvIcon from "../../../assets/comps/file-csv-icon";
 import DeleteIcon from "../../../assets/comps/delete-icon";
@@ -24,6 +23,7 @@ const UploadBranch = ({ close, isOpen }: Props) => {
   };
 
   const handleSubmit = () => {
+    console.log(file);
     close();
   };
   return (
@@ -56,7 +56,7 @@ const UploadBranch = ({ close, isOpen }: Props) => {
               handleChange={handleFileChange}
               fileTypes={fileTypes}
               className={""}
-              maxSize={"10mb"}
+              // maxSize={"10mb"}
             >
               <div className="w-full max-w-[400px] flex flex-col items-center border-[2px] p-3 border-primary rounded-xl">
                 <div className="flex text-center gap-2 justify-center items-center w-full h-full ">

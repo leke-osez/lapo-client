@@ -8,9 +8,9 @@ import { cn } from "../../utils/namespaces/style";
 
 export type CustomTableProps = {
   data: unknown[];
-  columns: ColumnDef<unknown, any>[];
-  headClass: string;
-  dataClass: string;
+  columns: ColumnDef<unknown, unknown>[];
+  headClass?: string;
+  dataClass?: string;
 };
 
 const CustomTable = ({

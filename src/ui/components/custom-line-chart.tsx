@@ -6,12 +6,13 @@ import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
+  type ChartConfig,
 } from "@/components/ui/chart";
 
 type Props = {
   stroke: string;
-  chartData: any;
-  chartConfig: any;
+  chartData: unknown[];
+  chartConfig: ChartConfig;
 };
 
 export function CustomLine({ stroke, chartData, chartConfig }: Props) {

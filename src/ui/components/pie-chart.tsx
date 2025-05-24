@@ -4,6 +4,7 @@ import {
   ChartLegendContent,
   ChartTooltip,
   ChartTooltipContent,
+  type ChartConfig,
 } from "@/components/ui/chart";
 import type React from "react";
 import { PieChart, Pie, Cell, Label } from "recharts";
@@ -11,7 +12,7 @@ import { PieChart, Pie, Cell, Label } from "recharts";
 interface PieChartProps {
   chartData: { status: string; total: number }[];
   colors?: Array<string>;
-  chartConfig?: any;
+  chartConfig?: ChartConfig;
 }
 
 // const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"]
@@ -38,7 +39,7 @@ const ChartPie: React.FC<PieChartProps> = ({
           paddingAngle={2}
           legendType="circle"
         >
-          {chartData.map((entry, index) => (
+          {chartData.map((_, index) => (
             <Cell
               key={`cell-${index}`}
               fill={colors ? colors[index % colors.length] : "black"}

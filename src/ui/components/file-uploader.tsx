@@ -1,10 +1,9 @@
-import { useState } from "react";
 import { FileUploader } from "react-drag-drop-files";
 import { cn } from "../../utils/namespaces/style";
 
 type Props = {
   children: React.ReactNode;
-  handleChange: (file: any) => void;
+  handleChange: (file: unknown) => void;
   fileTypes: string[];
   className?: string;
 };

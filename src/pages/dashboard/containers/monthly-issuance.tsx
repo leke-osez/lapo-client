@@ -2,20 +2,20 @@ import type { ChartConfig } from "@/components/ui/chart";
 import { StackedBarChart } from "@/ui/components/stacked-bar-chart";
 // import StackedBarChart from "../../../ui/components/stacked-bar-chart";
 
-const months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
+// const months = [
+//   "Jan",
+//   "Feb",
+//   "Mar",
+//   "Apr",
+//   "May",
+//   "Jun",
+//   "Jul",
+//   "Aug",
+//   "Sep",
+//   "Oct",
+//   "Nov",
+//   "Dec",
+// ];
 
 const chartData = [
   { month: "Jan", personalized: 20, instant: 20 },

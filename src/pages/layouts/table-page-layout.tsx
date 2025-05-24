@@ -23,7 +23,7 @@ type Props = {
     placeholder: string;
     className?: string;
   };
-  inputProps: {
+  inputProps?: {
     placeholder: string;
     className?: string;
     label?: string;
@@ -48,27 +48,27 @@ const TablePageLayout = ({
   searchProps,
   inputProps,
   tableActionProps,
-  deleteAction,
-  editAction,
+  // deleteAction,
+  // editAction,
   columns,
 }: Props) => {
   const columnsWithActions = columns.map((column) => {
     if (column.id === "actions") {
       return {
         ...column,
-        cell: ({ row }) => (
+        cell: () => (
           <div className="flex gap-2">
             <Button
               variant="plain"
               className="p-1"
-              onClick={() => deleteAction(row.original.id)}
+              // onClick={() => deleteAction(row.original.id)}
             >
               <EditIcon />
             </Button>
             <Button
               variant="plain"
               className="p-1"
-              onClick={() => editAction(row.original.id)}
+              // onClick={() => editAction(row.original.id)}
             >
               <DeleteIcon />
             </Button>

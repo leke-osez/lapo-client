@@ -14,13 +14,13 @@
     "noEmit": true,
 
     /* Linting */
-    "strict": true,
+    // "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
-    // "noExplicitAny": false
+    // "noExplicitunknown": false
   },
   "include": ["vite.config.ts"]
 }

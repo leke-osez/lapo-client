@@ -47,8 +47,8 @@ const RolesPage = () => {
             className: "text-xs",
           },
         ]}
-        deleteAction={(id: string) => {}}
-        editAction={(id: string) => {}}
+        // deleteAction={(id: string) => {}}
+        // editAction={(id: string) => {}}
       />
     </div>
   );

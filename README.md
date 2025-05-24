@@ -1,8 +1,10 @@
-# Lapo Client App (Dashboard)
+# 📇 Card Management Dashboard
 
-A dashboard to manage cards effectively
+A modern, responsive dashboard for managing cards effectively.
 
-### Use any username or pass to login to simulate authentication.
+Built with React and styled using Tailwind CSS, this project provides a clean and user-friendly interface for handling card data in an intuitive way.
+
+### Use false credential to simulate authentication.
 
 ## The site is live at:
 

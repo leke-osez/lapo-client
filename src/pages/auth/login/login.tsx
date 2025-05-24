@@ -48,7 +48,7 @@ const LoginPage = () => {
       <img
         src="/coarse-auth-bg.png"
         alt=""
-        className="opacity-15 inset-0 absolute w-full z-0 h-full object-cover"
+        className="opacity-9 inset-0 absolute w-full z-0 h-full object-cover"
       />
       <div className="absolute inset-0 flex md:flex-row flex-col gap-4 p-[20px]   bg-cover bg-no-repeat bg-center">
         <section className="flex w-full h-full justify-center ">

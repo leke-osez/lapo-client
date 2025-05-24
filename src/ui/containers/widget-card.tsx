@@ -12,7 +12,7 @@ const WidgetCard = ({ children, title, className, containerClass }: Props) => {
   return (
     <div
       className={cn(
-        `border border-widget-border bg-foreground p-4 rounded-[10px] flex flex-col gap-5 min-w-[500px]`,
+        `border border-widget-border bg-foreground p-4 rounded-[10px] flex flex-col gap-5 w-full`,
         containerClass
       )}
     >

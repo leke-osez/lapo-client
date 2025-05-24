@@ -112,7 +112,7 @@ const DashboardPage = () => {
         <div className="flex flex-wrap items-start py-4 gap-4">
           {/* Left - MONTHLY ISSUANCE & WEEK INCOME*/}
           <div className="flex-1 flex-wrap flex flex-col gap-4">
-            <WidgetCard title="Monthly Issuance">
+            <WidgetCard title="Monthly Issuance" containerClass="min-w-[450px]">
               <div>
                 <MonthlyIssuance />
               </div>
@@ -126,7 +126,7 @@ const DashboardPage = () => {
                   </Button>
                 </div>
               }
-              className="aspect-[2/1]"
+              className="aspect-[2/1] min-w-[450px]"
             >
               <WeekIncome />
             </WidgetCard>
@@ -143,10 +143,14 @@ const DashboardPage = () => {
                   </Button>
                 </div>
               }
+              containerClass="min-w-[450px]"
             >
               <RecentCardRequest />
             </WidgetCard>
-            <WidgetCard title="Card Status Distribution" containerClass="">
+            <WidgetCard
+              title="Card Status Distribution"
+              containerClass="min-w-[450px]"
+            >
               <CardStatusDistribution />
             </WidgetCard>
           </div>

@@ -1,8 +1,9 @@
-  #  Lapo Client App (Dashboard)
+# Lapo Client App (Dashboard)
+
+A dashboard to manage cards effectively
+
+### Use any username or pass to login to simulate authentication.
 
 ## The site is live at:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
+- https://lapo-client.vercel.app/

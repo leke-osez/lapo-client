@@ -8,7 +8,13 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 
-export function CustomLine({ stroke, chartData, chartConfig }) {
+type Props = {
+  stroke: string;
+  chartData: any;
+  chartConfig: any;
+};
+
+export function CustomLine({ stroke, chartData, chartConfig }: Props) {
   return (
     <ChartContainer config={chartConfig}>
       <LineChart

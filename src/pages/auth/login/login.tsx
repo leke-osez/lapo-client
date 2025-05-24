@@ -20,7 +20,6 @@ import { InputAvatar, InputPadlock, InputShow } from "../../../assets/comps";
 import { lapoLogo, loginCard } from "../../../assets/png";
 import { Checkbox } from "../../../ui/components/checkbox";
 import { Label } from "../../../ui/components/label";
-import { useAppSelector } from "../../../app/hooks/rtk-hook";
 
 type FormValues = z.infer<typeof loginSchema>;
 

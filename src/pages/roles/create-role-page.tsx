@@ -1,4 +1,4 @@
-import { memo, useMemo, useState } from "react";
+import { memo, useState } from "react";
 import type { CreateRoleType } from "../../libs/schema/role";
 import TablePageLayout from "../layouts/table-page-layout";
 import { createColumnHelper } from "@tanstack/react-table";
@@ -35,7 +35,6 @@ const CreateRolePage = memo(() => {
   //   const data = useMemo(() => , []);
   const columnHelper = createColumnHelper<CreateRoleType>();
   const handleCheck = ({ id, checked, column }: HandleCheckProps) => {
-    console.log(checked);
     setData(
       data.map((item, index) => {
         if (String(id) === String(index)) {

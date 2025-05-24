@@ -110,8 +110,8 @@ const BranchesPage = () => {
             className: "text-xs",
           },
         ]}
-        deleteAction={(id: string) => {}}
-        editAction={(id: string) => {}}
+        // deleteAction={(id: string) => {}}
+        // editAction={(id: string) => {}}
       />
 
       {isAddBranchOpen && (
@@ -119,7 +119,7 @@ const BranchesPage = () => {
           isOpen={isAddBranchOpen}
           close={closeBranchModal}
           form={form} // Pass the form object here
-          onSubmit={(data) => {
+          onSubmit={() => {
             closeBranchModal();
           }}
         />

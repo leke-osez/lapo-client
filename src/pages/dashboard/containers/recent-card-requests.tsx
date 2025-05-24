@@ -1,5 +1,4 @@
 import { createColumnHelper } from "@tanstack/react-table";
-import ExpandIcon from "../../../assets/comps/expand-icon";
 import CustomTable from "../../../ui/containers/custom-table";
 import type { RecentCardRequestType } from "../../../libs/schema/recent-card-request";
 import { Button } from "../../../ui/components/button";
@@ -39,7 +38,7 @@ const RecentCardRequest = () => {
     },
   ];
 
-  const handleView = (id: string) => {};
+  const handleView = () => {};
   const columnHelper = createColumnHelper<RecentCardRequestType>();
 
   const columns = [
@@ -78,10 +77,10 @@ const RecentCardRequest = () => {
     columnHelper.display({
       id: "actions",
       header: () => <span>Action</span>,
-      cell: ({ row }) => (
+      cell: () => (
         <Button
           className="text-primary text-xs"
-          onClick={() => handleView(row.id)}
+          onClick={() => handleView()}
           variant={"plain"}
         >
           View
@@ -98,14 +97,6 @@ const RecentCardRequest = () => {
         headClass="bg-background"
         dataClass=""
       />
-    </div>
-  );
-};
-
-const Status = ({ type }) => {
-  return (
-    <div className="">
-      <p></p>
     </div>
   );
 };

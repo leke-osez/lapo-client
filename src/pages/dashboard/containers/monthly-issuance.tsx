@@ -49,7 +49,7 @@ const barsData = [
 ];
 
 const MonthlyIssuance = () => {
-  const labels = months;
+  // const labels = months;
   // const chartData = {
   //   labels: labels,
   //   datasets: [
